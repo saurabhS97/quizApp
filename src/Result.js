@@ -44,13 +44,13 @@ function Result() {
         <div className="resultHeading">Your Result</div>
        
         <div className="meter">
-        <div class="container">
-          <div class="gauge"></div>
+        <div className="container">
+          <div className="gauge"></div>
             <div className="grey-circle"></div>
             <div className="white-circle">
-                <div>{percen} %</div>
+                <div>{percen?percen:"loading"} %</div>
                 </div>
-            <div class="pointer animate autoAnimation" style={{transform: "rotate("+ (percen - 50) + "deg)"}} ></div>
+            <div className="pointer animate autoAnimation" style={{transform: "rotate("+ (percen - 50) + "deg)"}} ></div>
           
         </div>
         </div>

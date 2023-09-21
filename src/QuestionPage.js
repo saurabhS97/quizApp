@@ -156,6 +156,7 @@ function QuestionPage() {
         <div className="optionBox">
           <div className="content-container">
           <div className="quiz-heading-ques" key={number}>
+            {console.log("per", ((number + 1) * 100) / questions.length)}
             <div
               className="circular-progress"
               onLoad={
@@ -167,7 +168,7 @@ function QuestionPage() {
               data-percentage={Math.floor(
                 ((number + 1) * 100) / questions.length
               )}
-              data-progress-color="green"
+              data-progress-color="#44B77B"
               data-bg-color="#F3F4FA"
             >
               <div className="inner-circle"></div>
@@ -178,7 +179,6 @@ function QuestionPage() {
                   flexDirection: "row",
                   fontWeight: "900",
                   textAlign: "center",
-                  fontFamily: "Poppins",
                   fontStyle: "normal",
                   display: "flex",
                   justifyContent: "center",
@@ -188,8 +188,9 @@ function QuestionPage() {
                 <p
                   style={{
                     textAlign: "end",
-                    padding: "26px 0px 0px 0px",
+                    padding: "30px 0px 0px 0px",
                     opacity: 0.796,
+                    color:"#999999"
                   }}
                 >
                   /{questions.length}
@@ -216,6 +217,7 @@ function QuestionPage() {
               let isSeletecd = answerNo.includes(index);
               return (
                 <div
+                key={index}
                   className="optionValue"
                   style={{ border: isSeletecd ? "4.444px solid #44B77B" : "" }}
                   onClick={(_) => optionSelection(index, val.id)}
@@ -251,8 +253,8 @@ function QuestionPage() {
                         fill="none"
                       >
                         <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
+                          fillRule="evenodd"
+                          clipRule="evenodd"
                           d="M48 24C48 37.2548 37.2548 48 24 48C10.7452 48 0 37.2548 0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24ZM37.3137 14.3431L39.435 16.4645L25.2929 30.6066L22.4645 33.435L19.636 30.6066L12.565 23.5355L14.6863 21.4142L22.38 28.0821L37.3137 14.3431Z"
                           fill="#44B77B"
                         />
