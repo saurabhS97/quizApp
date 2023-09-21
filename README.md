@@ -24,5 +24,10 @@ Computes the overall result and displays it to the user.
 Offers the option for the user to retake the quiz.
 
 
+Commands to run the docker
 
+To build the docker image-
+    docker image build -t quizzimage:latest .
 
+To run the image
+    docker run -dp 8000:3000 --name quizzimage quizzimage:latest
