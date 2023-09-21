@@ -31,3 +31,7 @@ To build the docker image-
 
 To run the image
     docker run -dp 8000:3000 --name quizzimage quizzimage:latest
+
+
+deployed netlify link
+https://main--phenomenal-basbousa-5649e9.netlify.app/
