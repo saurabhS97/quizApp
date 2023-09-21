@@ -5,7 +5,6 @@ import { Router, useNavigate } from 'react-router-dom';
 function StartPage() {
     const navigate = useNavigate();
 function goToStart(){
-    console.log("sas")
     navigate('/questionPage');
 }
   return ( 
