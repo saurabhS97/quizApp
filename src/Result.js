@@ -123,7 +123,7 @@ function Result() {
         </div>
         <div className="buttonContainer">
 
-        <button className="bottomButton" onClick={startAgain}>
+        <button className="startButton" onClick={startAgain}>
           Start Again
         </button>
         </div>

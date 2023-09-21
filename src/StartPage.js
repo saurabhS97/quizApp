@@ -52,7 +52,7 @@ function goToStart(){
           </div>
       </div>
       </div> <div>
-          <button className="bottomButton" onClick={goToStart}>Start</button>
+          <button className="startButton" onClick={goToStart}>Start</button>
       
       </div>
   </div>
